@@ -60,25 +60,47 @@ int main() {
     while(1) {
 
 
-    //TODO: revise this value according to your result
+        //TODO: revise this value according to your result
 
-    servo_control(143.320);
-
-
-    steps = 0;
-
-    t.reset();
-
-    t.start();
+        servo_control(-17.748);
 
 
-    wait(8);
+        steps = 0;
+
+        t.reset();
+
+        t.start();
 
 
-    float time = t.read();
+        wait(8);
 
 
-    pc.printf("%1.3f\r\n", (float)steps*6.5*3.14/32/time);
+        float time = t.read();
+
+
+        pc.printf("%1.3f\r\n", (float)steps*6.5*3.14/32/time);
+
+
+
+    /*    //TODO: revise this value according to your result
+
+        servo_control(118.703);
+
+
+        steps = 0;
+
+        t.reset();
+
+        t.start();
+
+
+        wait(5.0);
+
+
+        time = t.read();
+
+
+        pc.printf("%1.3f\r\n", (float)steps*6.5*3.14/32/time);*/
 
     }
 

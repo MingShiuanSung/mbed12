@@ -15,13 +15,13 @@ x = np.linspace(0, end, num=n) # signal vector
 
 #TODO: revise this array to your results
 
-y = np.array([1.356, 5.662, 6.539, 6.619, 7.098, 7.177]) # speed vector
+y = np.array([0.319, 5.104, 7.815, 7.576, 7.081, 7.098]) # speed vector
 
 
 z = np.polyfit(x, y, 2) # Least squares polynomial fit, and return the coefficients.
 
 
-goal = 7             # if we want to let the servo run at 7 cm/sec
+goal = -5             # if we want to let the servo run at 7 cm/sec
 
                      # equation : z[0]*x^2 + z[1]*x + z[2] = goal
 
